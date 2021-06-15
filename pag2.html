@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julieta Paz - Sobre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+ </head>
+
+
+<body>
+    <!--Cabeçalho da página-->
+    
+    <header class="header">
+        <h1>JULIETA PAZ</h1>
+        <nav class="menu">
+            <a class="menu-btn" href="index.html">Galeria</a class="menu btn">
+            <a class="menu-btn" href="pag2.html">Sobre</a class="menu btn">
+            <a class="menu-btn" href="pag3.html">Encomendar</a class="menu btn">
+            <a class="menu-btn" href="pag4.html">Contato</a>
+        </nav>
+    </header> 
+
+    <!--Fim do cabeçalho da página-->
+
+
+
+    <!--Conteúdo da página-->
+
+    <main>
+        <div>
+            <img class="mx-auto" src="imagens/imagem4.jpg" alt="Julieta Paz" width="300px" style="display: block;">         
+        </div>
+        
+        <div>
+            <p class="txt-sobre-mim text-center font-monospace lh-base ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quidem in facilis dolor, mollitia ea eos harum debitis, minima libero est minus. Iste eaque aperiam distinctio incidunt porro ipsa mollitia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos adipisci a, ipsam fuga aliquid rerum harum perferendis ipsa cupiditate culpa voluptatum magni nam suscipit accusantium animi, tenetur iste sit.</p>
+            <p class="txt-sobre-mim text-center font-monospace lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quidem in facilis dolor, mollitia ea eos harum debitis, minima libero est minus. Iste eaque aperiam distinctio incidunt porro ipsa mollitia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos adipisci a, ipsam fuga aliquid rerum harum perferendis ipsa cupiditate culpa voluptatum magni nam suscipit accusantium animi, tenetur iste sit.</p>
+        </div>
+    </main>
+    <h1 style="font-size: 20px;  text-shadow: none;">Me acompanhe também no instagram, estou sempre postando novas artes.<br><br>
+        @julieta.crsp</h1>
+    <!--Fim do conteúdo da página-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!--Rodapé da página-->
+    <script>
+        //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+} else {
+    mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+    <footer class="footer-style">
+    
+    </footer>
+
+    <!--Fim do rodapé da página-->
+</body>
+</html>

@@ -1,14 +1,109 @@
-
-.container-fluid {
-    margin-bottom: 10%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/**************************************************
+    GALERIA - PAG1
+**************************************************/
 .item {
     margin-bottom: 2%;
-    transition: .5s ease-in-out;
-
-    
+    /*transition: .5s ease-in-out;*/
 }
 .row .item:hover img {
     filter: brightness(70%);
     /*transform: scale(1.1);*/
 }
+/**************************************************/
+
+/**************************************************
+    SOBRE - PAG2
+**************************************************/
+/*.img-sobre-mim {
+display: block;
+margin-left: auto;
+margin-right: auto; 
+margin-top: 10%; 
+margin-bottom: 5%; 
+
+max-height: 370%;
+max-width: 300%;
+}*/
+
+.txt-sobre-mim {
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 2%; /*margem: esquerda, direita, baixo*/
+font-family: "Raleway", Arial, sans-serif;
+}
+/**************************************************/
+.footer-style {
+    background-color: rgb(121 113 113 / 13%);
+    height: 100px;
+    margin-top: 10%;
+}
+
+
+
+.header {
+    background-color: rgb(121 113 113 / 13%);
+    height: 220px;
+    box-shadow: 0px 9px 10px #0000001a;
+    margin-bottom: 2%;
+
+}
+.menu-btn:last-child{
+    margin-right: 0;
+}
+.menu-btn {   
+    padding: 10px;
+    background-color: rgb(154 144 144);
+    border-radius: 10%;
+    text-decoration: none;
+    color: white;
+    margin-right: 4%;
+}
+.menu-btn:hover {
+    color: white;
+    filter: brightness(80%);
+    transform: scale(1.1);
+}
+
+.menu {
+    text-align: center;
+}
+
+
+h1{
+    padding: 4% 10% 3% 10%;
+    text-align: center;
+    color: rgb(97 82 82);
+    text-shadow: 2px 2px 3px rgba(48, 48, 48, 0.686);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+/**************************************************
+    BOTÃO - UP
+**************************************************/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(116, 102, 102); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 360px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 60%;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(48, 48, 48); /* Add a dark-grey background on hover */
+    transform: scale(1.1);
+  }
