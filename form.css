@@ -19,7 +19,8 @@ label {
   white-space : nowrap; 
 }
 input[type=submit] {
-  background: rgb(13 110 253 / 25%);  color: #212529;;
+  background: #e2d1cf;  
+  color: #212529;
   padding: 7px 10px 7px 10px;
   width: 80px;
   border: none;
@@ -28,7 +29,8 @@ input[type=submit] {
   border-radius: 5px;
 }
 input[type=submit]:hover {
-  background-color: rgb(13 110 253 / 50%)
+  /*background-color: #F1E6E4;*/
+  filter: brightness(90%);
 }
 #assunto {
   cursor: pointer;

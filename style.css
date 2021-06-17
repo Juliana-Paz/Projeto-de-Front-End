@@ -84,14 +84,18 @@ word-spacing: 2px;
 line-height: 25px;
 font-size: 17px;
 }
+a.encomendar {
+    color: blueviolet;
+}
+
 /**************************************************/
 
 /**************************************************
     CONTATO - PAG4
 **************************************************/
 .text-contato-top {
-margin-left: 10%;
-margin-right: 10%;
+margin-left: 15%;
+margin-right: 15%;
 margin-top: 2%; 
 margin-bottom: 2%;
 text-align: center;
@@ -99,5 +103,11 @@ letter-spacing: 1px;
 word-spacing: 2px;
 line-height: 25px;
 font-size: 17px;
+}
+@media (max-width: 500px) {
+    .text-contato-top {
+    margin-left: 10%;
+    margin-right: 10%;    
+    }  
 }
 /**************************************************/
