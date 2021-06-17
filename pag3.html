@@ -5,93 +5,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julieta Paz - Encomendar</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="mobile-navbar.js"></script>
+    <style>
+      /*Espaçamento navbar e main*/
+      .topnav {
+      margin-bottom: 70px;
+      }
+    </style>
 </head>
-<body>
+<body>     
     <!--Cabeçalho da página-->
-    <header class="header">
-        <h1>JULIETA PAZ</h1>
-        <nav class="menu">
-            <a class="menu-btn" href="index.html">Galeria</a class="menu btn">
-            <a class="menu-btn" href="pag2.html">Sobre</a class="menu btn">
-            <a class="menu-btn" href="pag3.html">Encomendar</a class="menu btn">
-            <a class="menu-btn" href="pag4.html">Contato</a>
-        </nav>
-     </div>
-    </header> 
+    <header>
+      <nav>
+        <h1 class="julieta-paz">Julieta Paz</h1>
+        <div class="topnav" id="myTopnav">
+          <a class="a-nav" href="index.html">Galeria</a>
+          <a class="a-nav" href="pag2.html">Sobre</a>
+          <a class="a-nav" href="pag3.html">Encomendar</a>
+          <a class="a-nav" href="pag4.html">Contato</a>
+          <a href="javascript:void(0);" class="icon icon-right" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!--Fim do cabeçalho da página-->  
 
-    <div class="row row-cols-1 row-cols-md-2 g-4" style="padding: 0% 10% 0% 10%;">
-        <div class="col">
-          <div class="card text-white bg-secondary">
-            <img src="https://static.wixstatic.com/media/725779_4c316632ebff4788b1798a5095b3c936~mv2.gif" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
+    <!--Conteúdo da página-->
+    <main>     
+      <p class="text-encomendar-top">A encomendade um retrato é feita a partir de uma foto. É possível que ele seja um desenho a tinta aquarela, lápis grafite, tinta acrílica ou digital. <br> <br> Para desenhos em aquarela, grafite e acrílica, o preço varia de acordo com a quantidade de pessoas presentes na imagem e com o tamanho do papel escolhido. Já o desenho digital leva em conta apenas a quantidade de pessoas na imagem.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <table class="content-table">
+              <thead style="background-color: #E6C9F9;">  
+                <tr>
+                  <th></th>
+                  <th class="aquarela">AQUARELA</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>Tamanho</th>
+                  <th>cm</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A3</td>
+                  <td>29.7 X 42</td>
+                  <td>cada pessoa $160</td>
+                </tr>
+                <tr>
+                  <td>A4</td>
+                  <td>21 X 29.7</td>
+                  <td>cada pessoa $80</td>
+                </tr>
+                <tr>
+                  <td>A5</td>
+                  <td>14.8 X 21</td>
+                  <td>cada pessoa $55</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-        <div class="col">
-          <div class="card text-white bg-secondary">
-            <img src="https://static.wixstatic.com/media/725779_4c316632ebff4788b1798a5095b3c936~mv2.gif" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
+          <div class="col">
+            <table class="content-table grafite-color">
+              <thead style="background-color: #FFDBCB;"> 
+                <tr>
+                  <th></th>
+                  <th class="aquarela">GRAFITE</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>Tamanho</th>
+                  <th>cm</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A3</td>
+                  <td>29.7 X 42</td>
+                  <td>cada pessoa $180</td>
+                </tr>
+                <tr>
+                  <td>A4</td>
+                  <td>21 X 29.7</td>
+                  <td>cada pessoa $100</td>
+                </tr>
+                <tr>
+                  <td>A5</td>
+                  <td>14.8 X 21</td>
+                  <td>cada pessoa $85</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-        <div class="col">
-          <div class="card text-white bg-secondary">
-            <img src="https://static.wixstatic.com/media/725779_4c316632ebff4788b1798a5095b3c936~mv2.gif" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
+          <div class="col">
+            <table class="content-table acrilica-color">
+              <thead style="background-color: #D4DAFE;">
+                <tr>
+                  <th></th>
+                  <th class="aquarela">ACRÍLICA</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>Tamanho</th>
+                  <th>cm</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A3</td>
+                  <td>29.7 X 42</td>
+                  <td>cada pessoa $190</td>
+                </tr>
+                <tr>
+                  <td>A4</td>
+                  <td>21 X 29.7</td>
+                  <td>cada pessoa $100</td>
+                </tr>
+                <tr>
+                  <td>A5</td>
+                  <td>14.8 X 21</td>
+                  <td>cada pessoa $95</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-        <div class="col">
-          <div class="card text-white bg-secondary">
-            <img src="https://static.wixstatic.com/media/725779_4c316632ebff4788b1798a5095b3c936~mv2.gif" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
+          <div class="col">
+            <table class="content-table digital-color">
+              <thead style="background-color: #F1E6E4;">
+                <tr>
+                  <th></th>
+                  <th class="digital">DIGITAL</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>Tamanho</th>
+                  <th>cm</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Não influencia</td>
+                  <td>---</td>
+                  <td>cada pessoa 80</td>
+                </tr>
+                <tr>
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                </tr>
+                <tr>
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-      <h1 style="font-size: 20px; text-shadow: none;">Me acompanhe também no instagram, estou sempre postando novas artes.<br><br>
-        @julieta.crsp</h1>
-    <!--Fim do cabeçalho da página-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
- 
-    <!--Rodapé da página-->
-    <script>
-        //Get the button:
-mybutton = document.getElementById("myBtn");
+      
+      <p class="text-encomendar-bottom"> Você também pode adiquirir uma cópia original das artes. Ao compra-las, você apoia o trabalho artístico e ainda alegra seu espaço com uma bela arte! <br><br><br> Para realizar a encomenda ou obter uma cópia origal, acesse a área de <a class="a-encomendar" href="pag4.html">contato</a> e preencha o formulário informando o assunto de acordo com sua necessidade. Assim que receber sua mensagem, entrei em contato.</p>
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-} else {
-    mybutton.style.display = "none";
-}
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-</script>
-    <footer class="footer-style">
+    </main>
+    <!--Fim do conteúdo da página-->
     
+    <!--Rodapé da página-->
+    <footer>
+      <div class="footer-content">
+        <h3>julieta paz</h3>
+        <p>Estou sempre ativa no youtube, twitter e instagram, me acompanhe!</p>
+        <ul class="socials">
+            <li><a class="footer-socials" href="https://telegram.org/" target="_blank" rel="noopener noreferrer"><i class="fa fa-telegram"></i></a></li>
+            <li><a class="footer-socials" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="footer-socials" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
+            <li><a class="footer-socials" href="https://www.instagram.com/julieta.crsp/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2020 julieta paz. desenvolvido por <span>juliana paz</span></p>
+    </div>
     </footer>
-
     <!--Fim do rodapé da página-->
 </body>
 </html>
+
+

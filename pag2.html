@@ -5,72 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julieta Paz - Sobre</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="mobile-navbar.js"></script>
+    <style>
+      /*Espaçamento navbar e main*/
+      .topnav {
+      margin-bottom: 0px;
+      }
+    </style>
  </head>
-
-
 <body>
-    <!--Cabeçalho da página-->
-    
-    <header class="header">
-        <h1>JULIETA PAZ</h1>
-        <nav class="menu">
-            <a class="menu-btn" href="index.html">Galeria</a class="menu btn">
-            <a class="menu-btn" href="pag2.html">Sobre</a class="menu btn">
-            <a class="menu-btn" href="pag3.html">Encomendar</a class="menu btn">
-            <a class="menu-btn" href="pag4.html">Contato</a>
+    <!--Cabeçalho da página-->    
+    <header>
+        <nav>
+          <h1 class="julieta-paz">Julieta Paz</h1>
+          <div class="topnav" id="myTopnav">
+            <a class="a-nav" href="index.html">Galeria</a>
+            <a class="a-nav" href="pag2.html">Sobre</a>
+            <a class="a-nav" href="pag3.html">Encomendar</a>
+            <a class="a-nav" href="pag4.html">Contato</a>
+            <a href="javascript:void(0);" class="icon icon-right" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </nav>
-    </header> 
-
+      </header>
     <!--Fim do cabeçalho da página-->
 
-
-
     <!--Conteúdo da página-->
-
     <main>
         <div>
-            <img class="mx-auto" src="imagens/imagem4.jpg" alt="Julieta Paz" width="300px" style="display: block;">         
-        </div>
-        
+            <img class="mx-auto img-sobre-mim" src="imagens/imagem4.jpg" alt="Julieta Paz" width="300px" style="display: block;">         
+        </div>        
         <div>
-            <p class="txt-sobre-mim text-center font-monospace lh-base ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quidem in facilis dolor, mollitia ea eos harum debitis, minima libero est minus. Iste eaque aperiam distinctio incidunt porro ipsa mollitia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos adipisci a, ipsam fuga aliquid rerum harum perferendis ipsa cupiditate culpa voluptatum magni nam suscipit accusantium animi, tenetur iste sit.</p>
-            <p class="txt-sobre-mim text-center font-monospace lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quidem in facilis dolor, mollitia ea eos harum debitis, minima libero est minus. Iste eaque aperiam distinctio incidunt porro ipsa mollitia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos adipisci a, ipsam fuga aliquid rerum harum perferendis ipsa cupiditate culpa voluptatum magni nam suscipit accusantium animi, tenetur iste sit.</p>
+          <p class="text-center txt-sobre-mim">Meu nome é Julieta, tenho 22 anos, graduanda em Sistemas de Informação e minha maior paixão são pinturas com aquarela e arte digital. <br> <br> Minha relação com o desenho e a arte começou quando era criança, sempre amei desenhar e as pessoas ao meu redor me incentivavam com elogios. Cresci vendo minha mãe fazer desenhos à lápis, pois ela também gostava e decidiu fazer um curso de desenho por correspondência. <br> <br> Na maior parte da minha trajetória, fui autodidata, porém tive alguns professores e tutores que me motivavam e inspiraram a continuar aprendendo. Desde da minha adolescência, vendia telas pintadas à óleo e atualmente faço da arte de desenhar minha profissão.</p>
         </div>
-    </main>
-    <h1 style="font-size: 20px;  text-shadow: none;">Me acompanhe também no instagram, estou sempre postando novas artes.<br><br>
-        @julieta.crsp</h1>
+    </main>    
     <!--Fim do conteúdo da página-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <!--Rodapé da página-->
-    <script>
-        //Get the button:
-mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-} else {
-    mybutton.style.display = "none";
-}
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-</script>
-    <footer class="footer-style">
-    
+    <footer>
+      <div class="footer-content">
+        <h3>julieta paz</h3>
+        <p>Estou sempre ativa no youtube, twitter e instagram, me acompanhe!</p>
+        <ul class="socials">
+          <li><a class="footer-socials" href="https://telegram.org/" target="_blank" rel="noopener noreferrer"><i class="fa fa-telegram"></i></a></li>
+          <li><a class="footer-socials" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="footer-socials" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
+          <li><a class="footer-socials" href="https://www.instagram.com/julieta.crsp/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2020 julieta paz. desenvolvido por <span>juliana paz</span></p>
+    </div>
     </footer>
-
-    <!--Fim do rodapé da página-->
+    <!--Fim do rodapé da página-->   
 </body>
 </html>

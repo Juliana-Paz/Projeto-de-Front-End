@@ -4,171 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julieta Paz - Sobre</title>
+    <title>Julieta Paz - Contato</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="mobile-navbar.js"></script>
+  <style>
+    /*Estilo do formulário que não pega com o link*/
 
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .container {
+      border-radius: 5px;
+      background-color: #ffffff9e;
+      padding: 20px 30px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.076);  
+      margin-top: 50px;
+      margin-bottom: 50px;
+      }
+      @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }  
 
+    /*Fim do estilo do formulário que não pega com o link*/
 
-    <style>
-        /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-}
+    /*Espaçamento navbar e main*/
+      .topnav {
+      margin-bottom: 100px;
+      }
 
-/* Style the label to display next to the inputs */
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-/* Style the container */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-/* Floating column for labels: 25% width */
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-/* Floating column for inputs: 75% width */
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-    </style>
-
+  </style>
 </head>
 <body>
+
     <!--Cabeçalho da página-->
+    <header>
+      <nav>
+        <h1 class="julieta-paz">Julieta Paz</h1>
+        <div class="topnav" id="myTopnav">
+          <a class="a-nav" href="index.html">Galeria</a>
+          <a class="a-nav" href="pag2.html">Sobre</a>
+          <a class="a-nav" href="pag3.html">Encomendar</a>
+          <a class="a-nav" href="pag4.html">Contato</a>
+          <a href="javascript:void(0);" class="icon icon-right" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!--Fim do cabeçalho da página-->
 
-    <header class="header">
-        <h1>JULIETA PAZ</h1>
-        <nav class="menu">
-            <a class="menu-btn" href="index.html">Galeria</a class="menu btn">
-            <a class="menu-btn" href="pag2.html">Sobre</a class="menu btn">
-            <a class="menu-btn" href="pag3.html">Encomendar</a class="menu btn">
-            <a class="menu-btn" href="pag4.html">Contato</a>
-        </nav>
-    </header> 
-
-    <h1 style="font-size: 20px;  text-shadow: none;">Gostaria tirar alguma dúvida ou fazer uma encomenda? 
-        Por favor preencha o formulário a abaixo. Estou ansiosa para conversar com você! </h1>
-
-       <!--Fim do cabeçalho da página-->
-
-       <div class="container">
-        <form action="action_page.php">
+    <!--Conteúdo da página-->  
+    <main>    
+      <p class="text-contato-top">Para tirar uma dúvida, fazer uma encomenda ou adquirir uma cópia origal de uma arte, preencha o formulário abaixo. <br><br> Estou ansiosa para conversar com você!</p>  
+      <!--Formulário-->
+      <div class="container">
+        <form action="pag4.html">
           <div class="row">
             <div class="col-25">
-              <label for="fname">First Name</label>
+              <label for="pnome">Primeiro Nome</label>
             </div>
             <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="pnome" name="primeironome" placeholder="Digite seu primeiro nome..">
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="lname">Last Name</label>
+              <label for="unome">Sobrenome</label>
             </div>
             <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <input type="text" id="unome" name="ultimonome" placeholder="Digite seu sobrenome..">
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="country">Country</label>
+              <label for="e-mail">E-mail</label>
             </div>
             <div class="col-75">
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
+              <input type="text" id="e-mail" name="e-mail" placeholder="Digite seu e-mail..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="assunto">Assunto</label>
+            </div>
+            <div class="col-75 custom-select">
+              <select id="assunto" name="assunto">
+                <option value="duvida">Quero tirar uma dúvida</option>
+                <option value="print">Quero adquirir a cópia de uma arte</option>
+                <option value="encomenda">Quero fazer uma encomenda</option>
+                <option value="outro">Outro</option>
               </select>
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="subject">Subject</label>
+              <label for="mensagem">Mensagem</label>
             </div>
             <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <textarea id="mensagem" name="mensagem" placeholder="Escreva uma mensagem" style="height:200px"></textarea>
             </div>
           </div>
           <div class="row">
-            <input type="submit" value="Submit">
+            <input type="submit" class="botao" value="Enviar">
           </div>
         </form>
       </div>
+      <!--Fim do formulário-->
 
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </main>
+    <!--Fim do conteúdo da página-->
+
     <!--Rodapé da página-->
-    <h1 style="font-size: 20px;  text-shadow: none;">Me acompanhe também no instagram, estou sempre postando novas artes. <br><br>
-        @julieta.crsp</h1>
-    <footer class="footer-style">
-    
+    <footer>
+      <div class="footer-content">
+        <h3>julieta paz</h3>
+        <p>Estou sempre ativa no youtube, twitter e instagram, me acompanhe!</p>
+        <ul class="socials">
+          <li><a class="footer-socials" href="https://telegram.org/" target="_blank" rel="noopener noreferrer"><i class="fa fa-telegram"></i></a></li>
+          <li><a class="footer-socials" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="footer-socials" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
+          <li><a class="footer-socials" href="https://www.instagram.com/julieta.crsp/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2020 julieta paz. desenvolvido por <span>juliana paz</span></p>
+    </div>
     </footer>
-
-
-    <script>
-            //Get the button:
-    mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-
-    </script>
     <!--Fim do rodapé da página-->
 </body>
 </html>
