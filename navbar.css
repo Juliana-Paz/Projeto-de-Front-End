@@ -8,7 +8,7 @@
     color: #332929d0;
     /*background-color: rgb(121 113 113 / 13%);*/
     background: rgb(214,204,203);
-    background: linear-gradient(0deg, rgba(214,204,203,0.12088585434173671) 0%, rgba(241,230,228,0.10968137254901966) 100%);
+    background: white;
     display: block;
     text-align: center;
     padding: 70px 18px 30px 18px; /* top rigth bottom left */
@@ -16,24 +16,19 @@
     margin: 0px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    text-shadow: 2px 2px 5px rgb(48 48 48 / 69%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap');
-header {
+header {s
     font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
 }
 
-a {
-    text-shadow: 1px 1px 15px rgb(48 48 48 / 40%);
-}
 .topnav {
-    background-color: #f9f9f9ef;
+    background-color: #f7f2f1;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    box-shadow: 0px 8px 14px #00000013;
-    padding-bottom: 10px;
+    box-shadow: 0px 0px 2px #00000013;
 }
 .topnav a {
     float: left;
@@ -51,7 +46,7 @@ a {
     color: #332929d0;
     text-decoration: none;
     transition: 0.3s;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 .topnav .icon {
     display: none;

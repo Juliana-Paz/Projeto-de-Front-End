@@ -13,12 +13,12 @@
 }
 .row .item:hover img {
     filter: brightness(85%);
-    transform: scale(1.01);
+    transform: scale(1.03);
     transition: .2s ease-in-out;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.446);
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.446);*/
 }
 .img-style {
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
 /**************************************************/
